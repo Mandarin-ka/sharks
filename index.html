@@ -182,6 +182,36 @@
       </div>
     </section>
 
+    <section id="form">
+      <div class="section-container">
+        <h2 class="form__h"><span class="text-contrast">Свяжитесь</span> с нами</h2>
+        <p class="form__text">Если у вас остались вопросы,
+          можете задать их, заполнив форму ниже</p>
+        <form action="" class="contact__form">
+          <label for="FIO">Введите ФИО *</label>
+          <input type="text" id='FIO'>
+          <label for="FIO">Введите свое имя в Telegram (@) *</label>
+          <input type="text" id='tg'>
+          <label for="FIO">Тема</label>
+          <input type="text" id='unit'>
+          <label for="message">Введите сообщение</label>
+          <textarea name="" id="message" cols="30" rows="9"></textarea>
+          <div class="form__block t1">
+            <input type="checkbox" name="" id="personal__data" class="personal__data">
+            <label for="personal__data" class='pers__label'>Я согласен на обработку моих
+              персональных данных</label>
+          </div>
+          <div class="form__block">
+            <input type="checkbox" name="" id="confidential__agreement" class="confidential__agreement">
+            <label for="confidential__agreement" class='conf__label'>Я согласен c политикой
+              конфеденциальности</label>
+          </div>
+
+          <button class="form__submit-button">Отправить</button>
+        </form>
+      </div>
+    </section>
+
     <footer id="footer" class="footer">
       <div class="section-container">
         <div class="central-info">
@@ -193,8 +223,8 @@
           <p class="footer__tel">+375 (44) 585-73-14</p>
           <p class="footer__mail">Businesssharksfamily@gmail.com</p>
           <div class="blogs">
-            <img src="./assets/icons/tiktok.svg" alt="" class="blog__img">
-            <img src="./assets/icons/inst.svg" alt="" class="blog__img">
+            <a href=""><img src="./assets/icons/tiktok.svg" alt="" class="blog__img"></a>
+            <a href=""><img src="./assets/icons/inst.svg" alt="" class="blog__img"></a>
           </div>
         </div>
         <div class="footer__payment__items">
@@ -229,7 +259,6 @@
 
         <div class="year">© 2023</div>
       </div>
-
     </footer>
 </body>
 </html>
