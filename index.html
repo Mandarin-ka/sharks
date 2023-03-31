@@ -10,6 +10,7 @@
   <title>Business sharks</title>
 </head>
 <body>
+  <div class="backgr"></div>
   <div class="container">
     <header id="header" class="header">
       <div class="logo">  <a href=""><img src="./assets/icons/header-logo.svg" alt="logo" class="logo__img"> </a></div>
@@ -77,6 +78,27 @@
           <button class="ticket__button">купить билет</button>
         </div>
       </div>
+
+      <div class="ticket">
+        <div class="ticket__block">
+          <div class="cross"></div>
+          <div class="ticket__info">
+            <p class="ticket__place">МИНСК</p>
+            <p class="ticket__date__t">30 МАРТА</p>
+            <p class="ticket__time">17:00</p>
+            <h2 class="ticket__theme__t">TEMA КОНФЕРЕНЦИИ</h2>
+            <p class="ticket__price">25р.</p>
+            <h3 class="ticket__h">Спикеры</h3>
+            <div class="speaker__info">
+              <p class="speaker__name">Имя фамилия</p>
+              <p class="speaker__theme">- Тема</p>
+            </div>
+            <h3 class="ticket__h">Локация</h3>
+            <p class="ticket__adress">Адрес - Ивент пространство “Ботаник”</p>
+            <button class="ticket__button__t">Купить</button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="reasons">
@@ -136,6 +158,9 @@
     </section>
 
     <section id="slider">
+      <div class="decor__block">
+        <img src="./assets/icons/decor.svg" alt="decor__img" class ='decor'>
+      </div>
       <div class="section-container slider__container">
         <h2 class="slider__h">НАШИ <span class="text-contrast">ИВЕНТЫ</span></h2>
         <div class="slider">
@@ -156,11 +181,6 @@
             <button class="slider__controller__point"></button>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section id="partners">
-      <div class="section-container">
         <h2 class="partners__name">НАШИ <span class="text-contrast">ПАРТНЕРЫ</span></h2>
         <div class="partner__items">
           <div class="partner__item t1">
@@ -182,6 +202,42 @@
       </div>
     </section>
 
+    <section id="partners">
+      <div class="section-container">
+
+      </div>
+    </section>
+
+    <section id="form">
+      <div class="section-container">
+        <h2 class="form__h"><span class="text-contrast">Свяжитесь</span> с нами</h2>
+        <p class="form__text">Если у вас остались вопросы,
+          можете задать их, заполнив форму ниже</p>
+        <form action="" class="contact__form">
+          <label for="FIO">Введите ФИО <span class="td">*</span></label>
+          <input type="text" id='FIO'>
+          <label for="tg">Введите свое имя в Telegram (@) <span class="td">*</span></label>
+          <input type="text" id='tg'>
+          <label for="unit">Тема</label>
+          <input type="text" id='unit'>
+          <label for="message">Введите сообщение</label>
+          <textarea name="" id="message" cols="30" rows="9"></textarea>
+          <div class="form__block t1">
+            <input type="checkbox" name="" id="personal__data" class="personal__data">
+            <label for="personal__data" class='pers__label'>Я согласен на обработку моих
+              персональных данных</label>
+          </div>
+          <div class="form__block">
+            <input type="checkbox" name="" id="confidential__agreement" class="confidential__agreement">
+            <label for="confidential__agreement" class='conf__label'>Я согласен c политикой
+              конфеденциальности</label>
+          </div>
+
+          <button class="form__submit-button">Отправить</button>
+        </form>
+      </div>
+    </section>
+
     <footer id="footer" class="footer">
       <div class="section-container">
         <div class="central-info">
@@ -193,8 +249,8 @@
           <p class="footer__tel">+375 (44) 585-73-14</p>
           <p class="footer__mail">Businesssharksfamily@gmail.com</p>
           <div class="blogs">
-            <img src="./assets/icons/tiktok.svg" alt="" class="blog__img">
-            <img src="./assets/icons/inst.svg" alt="" class="blog__img">
+            <a href=""><img src="./assets/icons/tiktok.svg" alt="" class="blog__img"></a>
+            <a href=""><img src="./assets/icons/inst.svg" alt="" class="blog__img"></a>
           </div>
         </div>
         <div class="footer__payment__items">
@@ -229,7 +285,9 @@
 
         <div class="year">© 2023</div>
       </div>
-
     </footer>
+
+
+    <script src="index.js"></script>
 </body>
 </html>
