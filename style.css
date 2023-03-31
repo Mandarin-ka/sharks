@@ -246,6 +246,7 @@ h2{
   position: relative;
   max-width: 312px;
   margin: 90px auto 0;
+  margin-top: 110px;
 }
 
 .ticket__event{
@@ -447,8 +448,24 @@ h2{
   max-width: 360px;
 }
 
+#slider{
+  position: relative;
+  overflow: hidden;
+}
+
+.decor{
+  position: absolute;
+  background-image: url('./assets/icons/blur.svg');
+  top: -620px;
+  z-index: -1;
+  left: -900px;
+  background-position:  center;
+  background-repeat: no-repeat;
+}
+
 .slider{
   margin-top: 16px;
+  padding-bottom: 50px;
 }
 
 .slider__content{
@@ -512,11 +529,16 @@ h2{
   background-color: #9F5DF4;
 }
 
+.partners__name{
+  margin-left: 26px;
+}
+
 #partners{
   margin-top: 55px;
 }
 
 .partner__items{
+  margin: auto;
   display: flex;
   height: 92px;
   margin-top: 16px;
@@ -764,6 +786,135 @@ input{
   color: #D2B5F8;
 }
 
+.ticket{
+  display: flex;
+  background-color: white;
+  width: 288px;
+  padding: 24px 24px 18px;
+  z-index: 1;
+  height: 422px;
+  margin: 0 auto;
+  right: 0; left: 0;
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+}
+
+.cross{
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  right:24px;
+}
+
+.cross::before{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 28px;
+  top: 14px;
+  transform: rotate(45deg);
+  background-color: black;
+}
+
+.cross::after{
+  content: '';
+  position: absolute;
+  height: 3px;
+  top: 14px;
+  width: 28px;
+  transform: rotate(-45deg);
+  background-color: black;
+}
+
+.ticket__block{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  max-height: 422px;
+}
+
+.ticket__place{
+  margin: auto;
+  width: fit-content;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.ticket{
+  display: none;
+}
+
+.ticket.active{
+  display: block;
+}
+
+.ticket__date__t,
+.ticket__time{
+  margin: auto;
+  width: fit-content;
+  font-weight: 200;
+  font-size: 12px;
+  color:#00000099;
+}
+
+.ticket__theme__t{
+  color: black;
+  width: fit-content;
+  font-weight: 800;
+  margin: auto;
+  font-size: 20px;
+}
+
+.ticket__price{
+  font-size: 48px;
+  line-height: 57px;
+  color: #773AC5;
+  font-weight: 800;
+  width: fit-content;
+  margin: 5px auto;
+}
+
+.ticket__h{
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 22px;
+  color: black;
+}
+
+.speaker__info{
+  display: flex;
+  margin-top: 8px;
+}
+
+.speaker__name{
+  color: #773AC5;
+  text-decoration: underline;
+}
+
+.speaker__theme{
+  margin-left: 7px;
+}
+
+.ticket__adress{
+  margin-top: 8px;
+}
+
+.ticket__button__t{
+  background: linear-gradient(99.49deg, #9F5DF4 -28.36%, #773AC5 163.72%);
+  width: 142px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  margin: 70px auto 0;
+  color: white;
+  font-size: 14px;
+  display: block;
+  border-radius: 10px;
+}
+
 @media screen and (max-width: 640px) {
   .start-screen__chairs{
     width: 100%;
@@ -793,5 +944,13 @@ input{
     background-position: 70% 70%;
     left: -680px;
     top: -70px;
+  }
+
+
+}
+
+@media screen and (min-width: 420px) {
+  .decor{
+    display: none;
   }
 }
