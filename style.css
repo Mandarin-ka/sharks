@@ -33,8 +33,26 @@
   font-weight: 500;
 }
 
+html.active{
+  overflow-y: hidden;
+}
+
 body{
   background-color: #0B0B0F;
+}
+
+.backgr{
+  display: none;
+}
+
+.backgr.active{
+  z-index: 1;
+  display: block;
+  width: 100vw;
+  position: fixed;
+  height: 100vh;
+  background-color: #000000aa;
+  top: 0;
 }
 
 *{
@@ -444,8 +462,10 @@ h2{
 .slider__imgs{
   display: flex;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
   max-width: 360px;
+  margin: auto;
+
 }
 
 #slider{
@@ -508,7 +528,8 @@ h2{
 }
 
 .slider__img{
-  max-width: 360px;
+  transition: 0.5s;
+  width: 360px;
 }
 
 .slider__controller{
@@ -796,8 +817,8 @@ input{
   margin: 0 auto;
   right: 0; left: 0;
   border-radius: 20px;
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: calc(50% - 300px);
 }
 
 .cross{
@@ -843,6 +864,10 @@ input{
 
 .ticket{
   display: none;
+}
+
+.td{
+  color: red;
 }
 
 .ticket.active{

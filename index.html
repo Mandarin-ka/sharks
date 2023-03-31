@@ -10,6 +10,7 @@
   <title>Business sharks</title>
 </head>
 <body>
+  <div class="backgr"></div>
   <div class="container">
     <header id="header" class="header">
       <div class="logo">  <a href=""><img src="./assets/icons/header-logo.svg" alt="logo" class="logo__img"> </a></div>
@@ -213,11 +214,11 @@
         <p class="form__text">Если у вас остались вопросы,
           можете задать их, заполнив форму ниже</p>
         <form action="" class="contact__form">
-          <label for="FIO">Введите ФИО *</label>
+          <label for="FIO">Введите ФИО <span class="td">*</span></label>
           <input type="text" id='FIO'>
-          <label for="FIO">Введите свое имя в Telegram (@) *</label>
+          <label for="tg">Введите свое имя в Telegram (@) <span class="td">*</span></label>
           <input type="text" id='tg'>
-          <label for="FIO">Тема</label>
+          <label for="unit">Тема</label>
           <input type="text" id='unit'>
           <label for="message">Введите сообщение</label>
           <textarea name="" id="message" cols="30" rows="9"></textarea>
@@ -285,5 +286,8 @@
         <div class="year">© 2023</div>
       </div>
     </footer>
+
+
+    <script src="index.js"></script>
 </body>
 </html>
