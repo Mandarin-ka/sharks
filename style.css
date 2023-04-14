@@ -125,7 +125,6 @@ h2{
 #start-screen{
   position: relative;
   overflow: hidden;
-  min-height: 1030px;
   max-width: 100%;
   width: 100%;
 }
@@ -155,13 +154,18 @@ h2{
   left: 0;
 }
 
-.start-screen__h{
-  display: block;
-  font-size: 40px;
+.start-screen__data__img{
+  min-width: 30px;
+  max-width: 100%;
+  width: 30px;
+  height: fit-content;
+}
+
+.start-screen__p{
+  font-size: 32px;
   color: white;
   font-family: Inter;
   font-weight: 900;
-  line-height: 52px;
   margin-top: 20px;
   color: #D2B5F8;
   text-align: center;
@@ -171,6 +175,12 @@ h2{
   text-transform: uppercase;
   font-size: 10px;
   font-weight: 100;
+  color: #D2B5F8;
+}
+
+.start-screen__data__img.t{
+  display: block;
+  border-radius: 50%;
 }
 
 .data-temp{
@@ -183,6 +193,9 @@ h2{
 
 .start-screen__img{
   margin-top: 30px;
+  width: 200px;
+  margin:30px auto 0;
+  display: block;
 }
 
 .data{
@@ -191,6 +204,7 @@ h2{
   color: white;
   font-size: 10px;
   border: 1px solid #55555588;
+  align-items: center;
   padding: 10px;
   border-radius: 10px;
   margin: 10px auto;
@@ -201,14 +215,18 @@ h2{
   position: relative;
   flex-direction: column;
   justify-content: space-between;
-  margin: 100px auto;
+  margin: 100px auto 0;
   max-width: 312px;
 }
 
-.start-screen__h__temp{
+.start-screen__p__temp{
   display: block;
   font-family: Inter;
-  font-weight: 900;
+  font-weight: 600;
+  margin-top: 20px;
+  letter-spacing: 0.02em;
+  font-size: 16px;
+  text-align: center;
   color: white;
 }
 
@@ -217,10 +235,10 @@ h2{
   background-color: #773AC566;
   border-radius: 30px;
   border: 2px solid #8847db;
-  margin: 65px auto;
+  margin: 40px auto 0;
   color: white;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 20px;
   letter-spacing: 0.8px;
   cursor: pointer;
   text-align: center;
@@ -228,7 +246,7 @@ h2{
   justify-content: center;
   align-items: center;
   transition: 0.5s;
-  padding: 15px;
+  padding: 25px;
 }
 
 .start-screen__button:hover{
@@ -271,6 +289,9 @@ h2{
   position: relative;
   height: 270px;
   margin-top: 70px;
+  border-radius: 20px;
+  border: 3px solid white;
+  overflow: hidden;
 }
 
 .speaker__item__name{
@@ -292,7 +313,7 @@ h2{
   width: 100%;
   height: auto;
   position: absolute;
-  bottom: -30px;
+  bottom: 0;
   background-color: #0F0D14aa;
   backdrop-filter: blur(2px);
   padding: 10px 0;
@@ -303,32 +324,42 @@ h2{
   height: 30px;
   left: 0; right: 0;bottom: 0;margin: auto;
   text-align: center;
-  color: #ce51ff;
+  color: white;
   display: block;
-  margin: auto;
+  margin: 5px auto 0;
   border-bottom: unset;
   font-size: 24px;
   border-radius: 100%;
-  border: 1px solid #ce51ff;
+  border: 1px solid white;
   background-color: #00000000;
 }
 
+.inst{
+  padding: 5px;
+  display: block;
+  margin-left: 10px;
+}
+
 .info__block__item{
-  display: none;
+  position: absolute;
+  bottom: -270px;
+  transition: 0.8s;
+  background-color: #0F0D14aa;
+  height: 260px;
+  backdrop-filter: blur(2px);
+  color: white;
+  padding: 5px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 12px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .info__block__item.active{
-  background-color: #0F0D14aa;
-  height: 270px;
-  backdrop-filter: blur(2px);
-  color: white;
-  display: block;
-  padding-top: 20px;
-  text-align: center;
-  font-size: 12px;
-  position: absolute;
-  top: 0;
-  line-height: 16px;
+  bottom: 0;
 }
 
 .inst{
@@ -483,7 +514,6 @@ h2{
 .slider__h{
   color: white;
   font-size: 15px;
-  margin-top: 75px;
   margin-left: 26px;
 }
 
@@ -491,6 +521,7 @@ h2{
   padding: 0;
   max-width: fit-content;
   width: fit-content;
+  margin-top: 40px;
 }
 
 .slider__imgs{
@@ -661,7 +692,7 @@ h2{
 }
 
 .tarif__h2.t2{
-  color: #837004;
+  color: #871ece;
 }
 
 .tarif__h2.t3{
@@ -695,14 +726,18 @@ h2{
 }
 
 .tarif__button.t2{
-  background-color: black;
-  color: #bda000;
+  background-color: #871ece;
+  color: white;
 }
 
 
 .tarif__button.t3{
   background-color: #4b00ad;
   color: white;
+}
+
+.tarif__button img{
+  transform: rotate(-30deg);
 }
 
 .tarif__text{
@@ -1087,7 +1122,7 @@ input{
   }
 
   #start-screen{
-    min-height: 1430px;
+    min-height: 1130px;
   }
 
   .bkgr-blur{
