@@ -1,23 +1,3 @@
-document.querySelector('.ticket__button').addEventListener('click', (e)=>{
-  e.preventDefault();
-  document.querySelector('.ticket').classList.add('active')
-  document.querySelector('html').classList.add('active')
-  document.querySelector('.backgr').classList.add('active')
-})
-
-document.querySelector('.cross').addEventListener('click', (e)=>{
-  e.preventDefault();
-  document.querySelector('.ticket').classList.remove('active')
-  document.querySelector('html').classList.remove('active')
-  document.querySelector('.backgr').classList.remove('active')
-})
-
-document.querySelector('.ticket__button__t').addEventListener('click', (e)=>{
-  e.preventDefault();
-  document.querySelector('.ticket').classList.remove('active')
-  document.querySelector('html').classList.remove('active')
-  document.querySelector('.backgr').classList.remove('active')
-})
 
 document.querySelector('.slider__right').addEventListener('click', (e)=>{
   e.preventDefault();
@@ -26,7 +6,7 @@ document.querySelector('.slider__right').addEventListener('click', (e)=>{
   for(let i=0;i<points.length; i++){
     if(points[i].classList.contains('active')){
       points[i].classList.remove('active');
-      if(i === 3){
+      if(i + 1 === points.length){
         cur=i+1;
         points[i].classList.add('active');
         break;
@@ -37,7 +17,7 @@ document.querySelector('.slider__right').addEventListener('click', (e)=>{
     }
   }
 
-  if(cur<4)
+  if(cur<points.length)
   document.querySelectorAll('.slider__img').forEach(e =>{
     e.style.transform = `translate(${-(cur)*360}px)`;
   })
@@ -65,5 +45,19 @@ document.querySelector('.slider__left').addEventListener('click', (e)=>{
   if(cur>=0)
   document.querySelectorAll('.slider__img').forEach(e =>{
     e.style.transform = `translate(${-cur*360}px)`;
+  })
+})
+
+document.querySelectorAll('.more-info').forEach(e => {
+  e.addEventListener('click', t =>{
+    t.preventDefault();
+    e.parentNode.parentNode.children[3].classList.add('active')
+  })
+})
+
+document.querySelectorAll('.info__block__item').forEach(e => {
+  e.addEventListener('click', t =>{
+    t.preventDefault();
+    e.classList.remove('active')
   })
 })
