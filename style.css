@@ -470,6 +470,10 @@ h2{
   margin-top: 5px;
 }
 
+.section-container{
+  margin: auto  ;
+}
+
 .events__h{
   margin-top: 25px;
   font-size: 15px;
@@ -606,6 +610,116 @@ h2{
   justify-content: center;
   align-items: center;
 }
+
+.tbi{
+  width: 40px;
+}
+
+.tarif__items{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tarif__item{
+  background-color: white;
+  width: 240px;
+  padding: 20px 20px 40px;
+  border-radius: 25px;
+  margin-top: 25px;
+}
+
+.tarif__ul{
+  margin: 8px auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tarif__ul li{
+  margin-top: 7px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.section-container{
+  width: fit-content;
+}
+
+
+.tarif__h2{
+  display: block;
+  font-size: 28px;
+  font-family: Mazzard;
+  font-weight: 600;
+  text-align: center;
+}
+
+.tarif__h2.t1{
+  color: #bc58ff;
+}
+
+.tarif__h2.t2{
+  color: #837004;
+}
+
+.tarif__h2.t3{
+  color: #4b00ad;
+}
+
+.price{
+  font-size: 24px;
+  color: black;
+  margin: 15px auto 10px;
+  display: block;
+  text-align: center;
+}
+
+.tarif__button{
+  height: 50px;
+  margin: 20px auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-radius: 15px;
+  border: 0;
+  font-size: 16px;
+  flex-direction: row-reverse;
+}
+
+.tarif__button.t1{
+  background-color: #bc58ff;
+  color: white;
+}
+
+.tarif__button.t2{
+  background-color: black;
+  color: #bda000;
+}
+
+
+.tarif__button.t3{
+  background-color: #4b00ad;
+  color: white;
+}
+
+.tarif__text{
+  text-align: center;
+  margin-top: 5px;
+}
+
+.tarif__item.t3 .tarif__ul{
+  margin: 20px 0;
+}
+
+.tarif__item.t3 .tarif__ul li pre{
+  font-weight: 700;
+  font-size: 24px;
+  font-family: Mazzard;
+}
+
 
 footer{
   margin-top: 20px;
