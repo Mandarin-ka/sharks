@@ -61,3 +61,21 @@ document.querySelectorAll('.info__block__item').forEach(e => {
     e.classList.remove('active')
   })
 })
+
+document.querySelector('.form__button').addEventListener('click', e => {
+  e.preventDefault();
+  document.querySelector('.contact__form').classList.add('active')
+  document.querySelector('html').style.overflow = 'hidden';
+  document.querySelector('.backgr').classList.add('active')
+})
+
+document.querySelector('.form__button').addEventListener('click', e =>{
+  location.href = './pages/form.html'
+})
+
+
+document.querySelectorAll('.tarif__button').forEach(e =>{
+  e.addEventListener('click', e =>{
+    location.href = './pages/form2.html'
+  })
+})

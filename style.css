@@ -502,7 +502,7 @@ h2{
 }
 
 .section-container{
-  margin: auto  ;
+  margin: auto;
 }
 
 .events__h{
@@ -651,6 +651,7 @@ h2{
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  width: 360px;
 }
 
 .tarif__item{
@@ -676,6 +677,7 @@ h2{
 
 .section-container{
   width: fit-content;
+  max-width: 400px;
 }
 
 
@@ -754,6 +756,13 @@ h2{
   font-size: 24px;
   font-family: Mazzard;
 }
+
+.form__button{
+  padding: 20px;
+  font-size: 20px;
+}
+
+
 
 
 footer{
@@ -848,6 +857,40 @@ footer{
 }
 
 .form__h{
+  font-size: 24px;
+}
+
+#form{
+  margin-top: 40px;
+}
+
+.form__button{
+  height: 50px;
+  margin: 20px auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  border-radius: 15px;
+  border: 0;
+  font-size: 20px;
+  flex-direction: row-reverse;
+  background-color: #4b00ad;
+  color: white;
+  cursor: pointer;
+}
+
+.text__form{
+  text-decoration: underline;
+  color: white;
+  font-size: 13px;
+  margin: 10px auto 0;
+  text-align: center;
+}
+
+
+
+.form__h{
   font-size: 16px;
   text-transform: uppercase;
 }
@@ -887,6 +930,33 @@ input{
   padding-bottom: 66px;
 }
 
+.contact__form{
+  width: 320px;
+  z-index: 2;
+  left: 0;top: 100px; right: 0;
+  margin: 60px auto 30px;
+}
+
+.contact__form h2{
+  font-size: 26px;
+  color: #D2B5F8;
+}
+
+.contact__form p{
+  color: #7C7783;
+  font-size: 13px;
+  margin-top: 7px;
+}
+
+#FIO, #tg, #unit, #message{
+  width: 288px;
+}
+
+.clown{
+  position: relative;
+  z-index: 10;
+}
+
 .form__text{
   max-width: 235px;
   color: #7C7783;
@@ -903,7 +973,6 @@ input{
 
 #message{
   margin-top: 8px;
-  width: calc(100% - 20px);
   background-color: #FFFFFF1A;
   border:0;
   border-radius: 3px;
@@ -957,7 +1026,7 @@ input{
   border-radius: 80px;
   font-size: 18px;
   display: block;
-  margin: 14px auto;
+  margin: 25px auto 14px;
   font-family: Mazzard;
   display: flex;
   justify-content: center;
@@ -971,7 +1040,7 @@ input{
   background-color: #00000000;
   border: 2px solid #D2B5F8;
   color: #D2B5F8;
-}
+} */
 
 #personal__data:checked ~ label::before,
 #confidential__agreement:checked ~ label::before {
@@ -979,105 +1048,6 @@ input{
   color: #D2B5F8;
 }
 
-.ticket{
-  display: flex;
-  background-color: white;
-  width: 288px;
-  padding: 24px 24px 18px;
-  z-index: 1;
-  height: 422px;
-  margin: 0 auto;
-  right: 0; left: 0;
-  border-radius: 20px;
-  position: fixed;
-  top: calc(50% - 300px);
-}
-
-.cross{
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  right:24px;
-}
-
-.cross::before{
-  content: '';
-  position: absolute;
-  height: 3px;
-  width: 28px;
-  top: 14px;
-  transform: rotate(45deg);
-  background-color: black;
-}
-
-.cross::after{
-  content: '';
-  position: absolute;
-  height: 3px;
-  top: 14px;
-  width: 28px;
-  transform: rotate(-45deg);
-  background-color: black;
-}
-
-.ticket__block{
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  max-height: 422px;
-}
-
-.ticket__place{
-  margin: auto;
-  width: fit-content;
-  font-weight: 900;
-  font-size: 16px;
-}
-
-.ticket{
-  display: none;
-}
-
-.td{
-  color: red;
-}
-
-.ticket.active{
-  display: block;
-}
-
-.ticket__date__t,
-.ticket__time{
-  margin: auto;
-  width: fit-content;
-  font-weight: 200;
-  font-size: 12px;
-  color:#00000099;
-}
-
-.ticket__theme__t{
-  color: black;
-  width: fit-content;
-  font-weight: 800;
-  margin: auto;
-  font-size: 20px;
-}
-
-.ticket__price{
-  font-size: 48px;
-  line-height: 57px;
-  color: #773AC5;
-  font-weight: 800;
-  width: fit-content;
-  margin: 5px auto;
-}
-
-.ticket__h{
-  margin-top: 20px;
-  font-size: 18px;
-  line-height: 22px;
-  color: black;
-}
 
 .speaker__info{
   display: flex;
@@ -1150,4 +1120,34 @@ input{
   .decor{
     display: none;
   }
+}
+
+.tempsection{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.tempsection h2{
+  font-size: 36px;
+  text-align: center;
+  color:rgba(256,256,256)
+}
+
+.tempsection p{
+  font-size: 16px;
+  margin-top: 20px;
+  color:rgba(256,256,256, 0.7);
+  text-align: center;
+}
+
+.tempsection img{
+  width: 80px;
+  margin-top: 30px;
+  background-color: white;
+  border-radius: 24px;
 }
