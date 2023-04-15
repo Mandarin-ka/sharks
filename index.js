@@ -79,13 +79,11 @@ document.querySelector('.start-screen__button').addEventListener('click', e =>{
 
 document.querySelectorAll('.tarif__button').forEach(e =>{
   e.addEventListener('click', e =>{
-    location.href = './pages/form2.html'
+    window.location.href = './pages/form2.html'
   })
 })
 
 
 document.querySelector('.form__submit-button').addEventListener('click', e =>{
-  location.href = './ty.html';
-  alert('sad');
-})
 
+})

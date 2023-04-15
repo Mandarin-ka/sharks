@@ -11,7 +11,7 @@
 </head>
 <body>
 
-  <header id="header" class="header">
+  <header id="header" class="header" name="name">
     <div class="logo">  <a href="./../index.html"><img src="./../assets/icons/header-logo.svg" alt="logo" class="logo__img"> </a></div>
     <nav class="nav">
       <ul class="nav__ul">
@@ -23,8 +23,7 @@
     </nav>
   </header>
 
-
-  <form action="https://script.google.com/macros/s/AKfycbyOjWGWu-L0ZT9glwd8PzqGcumnSkEvE1z_UNq_f8cfr9RhknIU_s8RfyX9sf7vk0Za/exec" method='post' class="contact__form">
+  <form target='name' method='post' class="contact__form">
     <h2>ОСТАВЬ ЗАЯВКУ!</h2>
     <p>Наш менеджер свяжется с вами в Telegram, чтобы забронировать ваше место</p>
     <label for="fio">Введите ФИО <span class="td">*</span></label>
@@ -33,18 +32,7 @@
     <input type="text" name="tg" id='tg'>
     <label for="promo">Введите промокод (необязательно) <span class="td">*</span></label>
     <input type="text" name="promo" id='promo'>
-    <!-- <div class="form__block t1">
-      <input type="checkbox" name="" id="personal__data" class="personal__data">
-      <label for="personal__data" class='pers__label'>Я согласен на обработку моих
-        персональных данных</label>
-    </div>
-    <div class="form__block">
-      <input type="checkbox" name="" id="confidential__agreement" class="confidential__agreement">
-      <label for="confidential__agreement" class='conf__label'>Я согласен c политикой
-        конфеденциальности</label>
-    </div> -->
-
-    <a href="/pages/ty.html"><button class="form__submit-button">Отправить</button></a>
+    <a href="/pages/ty.html"><button type="submit" formaction="https://script.google.com/macros/s/AKfycbyOjWGWu-L0ZT9glwd8PzqGcumnSkEvE1z_UNq_f8cfr9RhknIU_s8RfyX9sf7vk0Za/exec" class="form__submit-button">Отправить</button></a>
   </form>
 
   <footer id="footer" class="footer">
