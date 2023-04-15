@@ -235,7 +235,7 @@ h2{
   background-color: #773AC566;
   border-radius: 30px;
   border: 2px solid #8847db;
-  margin: 40px auto 0;
+  margin: 80px auto 0;
   color: white;
   font-weight: 400;
   font-size: 20px;
@@ -351,12 +351,23 @@ h2{
   padding: 5px;
   border-radius: 20px;
   text-align: center;
-  font-size: 12px;
+  font-size: 15px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.speaker__item:first-child{
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 640px) {
+  #tickets{
+    padding-top: 80px;
+  }
+}
+
 
 .info__block__item.active{
   bottom: 0;
