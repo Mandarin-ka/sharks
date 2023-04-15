@@ -73,9 +73,19 @@ document.querySelector('.form__button').addEventListener('click', e =>{
   location.href = './pages/form.html'
 })
 
+document.querySelector('.start-screen__button').addEventListener('click', e =>{
+  location.href = './index.html#tarifs'
+})
 
 document.querySelectorAll('.tarif__button').forEach(e =>{
   e.addEventListener('click', e =>{
     location.href = './pages/form2.html'
   })
 })
+
+
+document.querySelector('.form__submit-button').addEventListener('click', e =>{
+  location.href = './ty.html';
+  alert('sad');
+})
+
