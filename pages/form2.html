@@ -24,15 +24,15 @@
   </header>
 
 
-  <form action="" class="contact__form">
+  <form action="https://script.google.com/macros/s/AKfycbyOjWGWu-L0ZT9glwd8PzqGcumnSkEvE1z_UNq_f8cfr9RhknIU_s8RfyX9sf7vk0Za/exec" method='post' class="contact__form">
     <h2>ОСТАВЬ ЗАЯВКУ!</h2>
     <p>Наш менеджер свяжется с вами в Telegram, чтобы забронировать ваше место</p>
-    <label for="FIO">Введите ФИО <span class="td">*</span></label>
-    <input type="text" id='FIO'>
+    <label for="fio">Введите ФИО <span class="td">*</span></label>
+    <input type="text" name="fio" id='fio'>
     <label for="tg">Введите свое имя в Telegram (@) <span class="td">*</span></label>
-    <input type="text" id='tg'>
+    <input type="text" name="tg" id='tg'>
     <label for="promo">Введите промокод (необязательно) <span class="td">*</span></label>
-    <input type="text" id='promo'>
+    <input type="text" name="promo" id='promo'>
     <!-- <div class="form__block t1">
       <input type="checkbox" name="" id="personal__data" class="personal__data">
       <label for="personal__data" class='pers__label'>Я согласен на обработку моих
@@ -95,5 +95,7 @@
       <div class="year">© 2023</div>
     </div>
   </footer>
+
+  <script src="../form.js"></script>
 </body>
 </html>

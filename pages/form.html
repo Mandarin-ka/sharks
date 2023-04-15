@@ -24,14 +24,14 @@
   </header>
 
 
-  <form action="" class="contact__form">
+  <form action="https://script.google.com/macros/s/AKfycbzDMYRhGIwxe7MMV9m9SlSmp1zxXwbeuXr1m0v0kpqjYh8BiG5TzgQegqVN5qqNVUQE/exec" method='post' class="contact__form">
     <h2>ЗАДАЙТЕ СВОЙ ВОПРОС</h2>
     <label for="FIO">Введите ФИО <span class="td">*</span></label>
-    <input type="text" id='FIO'>
+    <input type="text" name='fio' id='FIO'>
     <label for="tg">Введите свое имя в Telegram (@) <span class="td">*</span></label>
-    <input type="text" id='tg'>
+    <input type="text" name='tg' id='tg'>
     <label for="message">Введите сообщение</label>
-    <textarea name="" id="message" rows="9"></textarea>
+    <textarea name="mes" id="message" rows="9"></textarea>
     <!-- <div class="form__block t1">
       <input type="checkbox" name="" id="personal__data" class="personal__data">
       <label for="personal__data" class='pers__label'>Я согласен на обработку моих
@@ -43,7 +43,7 @@
         конфеденциальности</label> -->
     <!-- </div> -->
 
-    <a href="/pages/ty.html"><button class="form__submit-button">Отправить</button></a>
+    <button class="form__submit-button">Отправить</button>
   </form>
 
   <footer id="footer" class="footer">
@@ -94,5 +94,6 @@
       <div class="year">© 2023</div>
     </div>
   </footer>
+  <script src="../index.js"></script>
 </body>
 </html>
