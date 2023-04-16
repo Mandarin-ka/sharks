@@ -27,11 +27,11 @@
   <form target='_self' action="https://script.google.com/macros/s/AKfycbzDMYRhGIwxe7MMV9m9SlSmp1zxXwbeuXr1m0v0kpqjYh8BiG5TzgQegqVN5qqNVUQE/exec" method='post' class="contact__form">
     <h2>ЗАДАЙТЕ СВОЙ ВОПРОС</h2>
     <label for="FIO">Введите ФИО <span class="td">*</span></label>
-    <input type="text" name='fio' id='FIO'>
+    <input type="text" name='fio' id='FIO' required>
     <label for="tg">Введите свое имя в Telegram (@) <span class="td">*</span></label>
-    <input type="text" name='tg' id='tg'>
+    <input type="text" name='tg' id='tg' required>
     <label for="message">Введите сообщение</label>
-    <textarea name="mes" id="message" rows="9"></textarea>
+    <textarea name="mes" id="message" rows="9" required></textarea>
     <button  class="form__submit-button">Отправить</button>
   </form>
 
