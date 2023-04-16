@@ -166,8 +166,9 @@ h2{
   color: white;
   font-family: Inter;
   font-weight: 900;
-  margin-top: 20px;
+  margin-top: 15px;
   color: #D2B5F8;
+  width: fit-content;
   text-align: center;
 }
 
@@ -192,9 +193,8 @@ h2{
 }
 
 .start-screen__img{
-  margin-top: 30px;
   width: 200px;
-  margin:30px auto 0;
+  margin: 20px auto 0;
   display: block;
 }
 
@@ -223,10 +223,13 @@ h2{
   display: block;
   font-family: Inter;
   font-weight: 600;
-  margin-top: 20px;
+  width: fit-content;
+  margin: 10px auto;
+  font-weight: 600;
   letter-spacing: 0.02em;
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
+  letter-spacing: 0.03em;
   color: white;
 }
 
@@ -234,8 +237,9 @@ h2{
   height: 40px;
   background-color: #773AC566;
   border-radius: 30px;
+  box-shadow: 2px -2px 25px #7c00b6;
   border: 2px solid #8847db;
-  margin: 80px auto 0;
+  margin: 70px auto 10px;
   color: white;
   font-weight: 400;
   font-size: 20px;
@@ -348,11 +352,11 @@ h2{
   height: 260px;
   backdrop-filter: blur(2px);
   color: white;
-  padding: 5px;
+  padding: 10px;
   border-radius: 20px;
   text-align: center;
   font-size: 15px;
-  text-align: center;
+  text-align: justify;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -478,7 +482,7 @@ h2{
 }
 
 .events{
-  margin: 63px 0 0 0 ;
+  margin: 40px 0 0 0 ;
 }
 
 .events__items{
@@ -605,7 +609,8 @@ h2{
 
 .slider__img{
   transition: 0.5s;
-  width: 360px;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .slider__controller{
